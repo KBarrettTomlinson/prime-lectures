@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PG Intro</title>
+    <script type="text/javascript" src="vendors/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="scripts/client.js">
+
+    </script>
+  </head>
+  <body>
+    <h1>Bookshelf</h1>
+    <h3 id = 'formTitle'>Add Entry</h3>
+    <form id="bookForm">
+      <input type="text" placeholder="author" name="author" id="author">
+      <input type="text" placeholder="title" name="title" id="title">
+      <input type="text" placeholder="publisher" name="publisher" id="publisher">
+      <input type="text" placeholder="date first published" name="datePublished" id="datePublished">
+      <input type="submit" value="submit">
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Author</th>
+          <th>Title</th>
+          <th>Publisher</th>
+          <th>Year First Published</th>
+          <th>Delete</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody id="books">
+
+      </tbody>
+    </table>
+  </body>
+</html>

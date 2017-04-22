@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Chi MEAN</title>
+
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+    <script type="text/javascript" src="scripts/client.min.js"></script>
+  </head>
+  <body>
+
+    <div ng-controller="OneController">
+      <input type="text" ng-model="scopeSpicyTuna.frenchToast">
+      <p> {{ scopeSpicyTuna.grilledCheese }} </p>
+    </div>
+
+    <div ng-controller="TwoController">
+      <p> {{ scopeSpicyTuna.frenchToast }} </p>
+      <button ng-click="scopeAddToGrilledCheese()">Add Yummy Grilled Cheese!</button>
+    </div>
+
+  </body>
+</html>

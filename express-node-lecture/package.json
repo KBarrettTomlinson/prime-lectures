@@ -1,0 +1,25 @@
+{
+  "name": "express-node-lecture",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "Keith Tomlinson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KBarrettTomlinson/express-node-lecture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KBarrettTomlinson/express-node-lecture/issues"
+  },
+  "homepage": "https://github.com/KBarrettTomlinson/express-node-lecture#readme",
+  "description": ""
+}

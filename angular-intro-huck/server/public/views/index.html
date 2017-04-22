@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Chi Angular Day 2</title>
+  <script type="text/javascript" src="/scripts/data.js"></script>
+  <script type="text/javascript" src="/vendors/angular.js"></script>
+  <script type="text/javascript" src="/scripts/client.js"></script>
+</head>
+<body>
+  <div ng-controller="WelcomeController">
+    {{ welcomeMessage }}
+  </div>
+
+  <div ng-controller="NameController">
+    <input type="text" ng-model="name">
+    {{greeting + " " + name + "!"}}
+
+    <div ng-show="searchName(person.name)" ng-repeat="person in peopleArray | limitTo: 3">
+      <h4>Hello, {{person.name}}!!!</h4>
+      <img ng-src="http://github.com/{{person.github}}.png?size=80" alt="">
+      <p ng-click="clickable()">Shoutout: {{person.shoutout}}</p>
+    </div>
+
+  </div>
+</body>
+</html>

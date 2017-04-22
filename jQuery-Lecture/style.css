@@ -1,0 +1,9 @@
+.profile {
+  background-color: salmon;
+  width: 200px;
+  padding: 10px;
+}
+
+.profile button{
+  float: right;
+}
